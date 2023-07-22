@@ -28,15 +28,33 @@ body {
   position: relative;
   text-align: center;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-/* Image styling, small image greyscale till it's hovered */
+  /* if screen gets too small flex-direction: column */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+
 .image-container {
   position: relative;
   display: inline-block;
+
+  @media (max-width: 600px) {
+    display: grid;
+    /* make grid have 2 */
+    grid-template-columns: 100px 1fr;
+    /* make grid force items to left */
+
+  }
 }
 
-/* image with proper aspect ratio */
 img {
   max-width: 200px;
   max-height: 200px;
@@ -66,9 +84,19 @@ a:hover img {
   bottom: 50%;
   padding: 8px;
   font-size: 20px;
-  word-wrap: break-word;
+  word-wrap: normal;
   color: white;
+
+  @media (max-width: 600px) {
+    position: relative;
+    bottom: -25%;
+    left: 0;
+    text-align: left;
+  }
+
 }
+
+
 
 .title {
   font-size: 2rem;

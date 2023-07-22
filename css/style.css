@@ -36,13 +36,22 @@ body {
   display: inline-block;
 }
 
+/* image with proper aspect ratio */
 img {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 50%;
   margin-bottom: 1rem;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
+  aspect-ratio: 1/1;
+}
+/* properly size images for phones */
+@media (max-width: 600px) {
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
 }
 
 a:hover img {

@@ -1,0 +1,109 @@
+/* recipe-style.css */
+
+/* Reset styling (if you have any specific resets for individual recipe pages) */
+/* ... */
+
+/* Recipe page background styling with animated gradient */
+html {
+    height: 100%;
+    background: linear-gradient(-180deg, #ff00cc, #333399, #ff00cc, #333399);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  /* Body styling with flexbox */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  /* Container styling for the recipe content */
+  .container {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly transparent background */
+  }
+  
+  /* Title styling for the individual recipe */
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  /* Image styling for the individual recipe */
+  img {
+    width: 400px; /* Adjust the width to your preference */
+    height: 400px; /* Adjust the height to your preference */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Heading styles for the sections (Ingredients and Directions) */
+  h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 1rem;
+  }
+
+  
+  /* List styles for the Ingredients and Directions */
+  ul, ol {
+    list-style: none;
+    padding-left: 0;
+    color: #fff;
+  }
+  
+  /* Additional styles for the paragraphs */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.back-link:hover {
+    background-color: #555;
+  }
+
+
+  
+  
+  /* Keyframes for animated gradient (if you have any specific gradients for recipe pages) */
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

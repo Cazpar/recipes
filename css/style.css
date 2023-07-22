@@ -1,0 +1,83 @@
+/* Reset styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HTML background styling with animated purple and pink gradient */
+html {
+  height: 100%;
+  background: linear-gradient(-180deg, #ff00cc, #333399, #ff00cc, #333399);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Body styling with flexbox */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+/* Container styling with flexbox */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Image styling, small image greyscale till it's hovered */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+a:hover img {
+  filter: grayscale(0%);
+}
+
+/* Title styling */
+.recipe-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  padding: 8px;
+  font-size: 20px;
+  word-wrap: break-word;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Keyframes for animated gradient */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
